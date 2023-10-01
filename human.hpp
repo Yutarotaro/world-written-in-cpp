@@ -1,9 +1,8 @@
 #pragma once
 #include <iostream>
 #include <memory>
-#include <vector>
 #include <string>
-
+#include <vector>
 
 class Human {
   std::string name;
@@ -12,4 +11,5 @@ class Human {
 public:
   Human() { std::cout << "おぎゃあ" << std::endl; }
   ~Human() { std::cout << "さようなら" << std::endl; }
+  virtual void live() = 0;
 };
